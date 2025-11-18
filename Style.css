@@ -1,0 +1,62 @@
+form {
+    width: 1000px;     /* o max-width */
+    margin: 0 auto;
+}
+
+/*seccion de informacion personal*/
+.seccion.info-p {
+    display: flex;
+    flex-direction: column;    /* todo hacia abajo */
+    gap: 12px;                 /* espacio entre cada línea */
+}
+
+.seccion.info-p label {
+    display: flex;
+    flex-direction: column;    /* etiqueta arriba, input abajo */
+    font-weight: 600;
+}
+
+.seccion.info-p input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 14px;
+}
+
+/*secciones*/
+
+.seccion input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 14px;
+    width: 400px;
+}
+
+.seccion select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 14px;
+    width: 200px;
+}
+
+.seccion button {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 14px;
+    width: 80px;
+
+    &.add {
+    background-color: #099b09;
+    }
+    
+    &.quit {
+    background-color: #e42828;
+    }
+}
+
+
+
+
