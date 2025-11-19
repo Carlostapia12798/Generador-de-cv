@@ -15,86 +15,100 @@
     <h1>Generador de Cv</h1>
 <section class="seccion info-p">
     <h2>Informacion personal</h2>
-    <Label>Nombre: <input type="text" name="nombre"></Label>
-    <label>Titulo: <input type="text" name="titulo"></label>
-    <label>Correo: <input type="text" name="correo"></label>
-    <label>Telefono: <input type="text" name="telefono"></label>
+    <Label>Nombre: <input type="text" name="nombre" placeholder="Jose Peralta"></Label>
+    <label>Titulo: <input type="text" name="titulo" placeholder="Ingeniero"></label>
+    <label>Correo: <input type="text" name="correo" placeholder="example@gmail.com"></label>
+    <label>Telefono: <input type="text" name="telefono" placeholder="809-000-0000"></label>
     <label>Fecha de nacimiento: <input type="date" name="fecha"></label>
-    <label>LinkedIn: <input type="url" name="linkedin"></label>
+    <label>LinkedIn: <input type="url" name="linkedin" placeholder="linkedin/joseperalta1"></label>
 </section>
 
 <section class="seccion skills">
     <h2>Skills</h2>
-    <input type="text" name="skill"> 
-    <select name="level" >
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
+    <section class="container skills-container">
+        <input type="text" name="skill" placeholder="Trabajo en equipo"> 
+        <select name="level" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <button class="quit" disabled>Eliminar</button>
+    </section>
     <button class="add">Agregar</button>
-    <button class="quit">Eliminar</button>
 </section>
 
 <section class="seccion software">
     <h2>Software</h2>
-    <input type="text" name="software"> 
-    <select name="level" >
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
+    <section class="container software-container" >
+        <input type="text" name="software" placeholder="Html"> 
+        <select name="level" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <button class="quit" disabled>Eliminar</button>
+    </section>
     <button class="add">Agregar</button>
-    <button class="quit">Eliminar</button>
 </section>
 
 <section class="seccion idiomas">
     <h2>Idiomas</h2>
-    <input type="text" name="idioma"> 
-    <select name="level" >
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
+    <section class="container idiomas-container">
+        <input type="text" name="idioma" placeholder="Español"> 
+        <select name="level" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <button class="quit" disabled>Eliminar</button>
+    </section>
     <button class="add">Agregar</button>
-    <button class="quit">Eliminar</button>
 </section>
 
 <section class="seccion resumen">
     <h2>Resumen Profesional</h2>
-    <Textarea></Textarea>
+    <Textarea placeholder="'Escribe un breve resumen profesional...'"></Textarea>
 </section>
 
 <section class="seccion exp">
     <h2>Experiencia Laboral</h2>
-    <input type="text" name="empresa">
-    <input type="date" name="inicio">
-    <input type="date" name="fin">
+    <input type="text" name="empresa" placeholder="Ferreteria el clavo">
+    <section class="fechas">
+        <label>Fecha de ingreso: <input type="date" name="inicio"></label>
+        <label>Fecha final: <input type="date" name="fin"></label>
+        <button class="quit" disabled>Eliminar</button>
+    </section>
     <button class="add">Agregar</button>
-    <button class="quit">Eliminar</button>
 </section>
 
 <section class="seccion edu">
     <h2>Educación</h2>
-    <input type="text" name="institución academica">
-    <input type="date" name="inicio">
-    <input type="date" name="fin">
+    <input type="text" name="institución academica" placeholder="escuela piky lora">
+    <section class="fechas">
+        <label>Fecha de ingreso: <input type="date" name="inicio"></label>
+        <label>Fecha final: <input type="date" name="fin"></label>
+        <button class="quit" disabled>Eliminar</button>
+    </section>
     <button class="add">Agregar</button>
-    <button class="quit">Eliminar</button>
+
 </section>
 
 <section class="seccion cert">
     <h2>Certificaciones</h2>
-    <input type="text" name="certificacion">
-    <input type="date" name="inicio">
-    <input type="date" name="fin">
+    <input type="text" name="certificacion" placeholder="iso900">
+    <section class="fechas">
+        <label>Fecha de ingreso: <input type="date" name="inicio"></label>
+        <label>Fecha final: <input type="date" name="fin"></label>
+        <button class="quit" disabled>Eliminar</button>
+    </section>
     <button class="add">Agregar</button>
-    <button class="quit">Eliminar</button>
+
 </section>
 
 </form>

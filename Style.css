@@ -1,6 +1,8 @@
 form {
     width: 1000px;     /* o max-width */
-    margin: 0 auto;
+    margin: auto;
+    padding: 30px;
+    background-color: #e8f1ff;
 }
 
 /*seccion de informacion personal*/
@@ -49,14 +51,38 @@ form {
     width: 80px;
 
     &.add {
-    background-color: #099b09;
+    background-color: #007bff;
+    color: #fff;
     }
     
     &.quit {
-    background-color: #e42828;
+    background-color: #c62828;
+    color: #fff;
     }
 }
 
+/*textarea*/
 
+textarea {
+    width: 600px;
+    height: 200px;
+}
+
+/*secciones con fecha ingreso, final*/
+
+.seccion.exp, .edu, .cert {
+
+    display: flex;
+    flex-direction: column;    
+    gap: 12px;   
+
+    label{   
+        font-weight: 600;
+    }
+
+    input[type="date"] {
+    width: 150px;
+    }
+}
 
 
